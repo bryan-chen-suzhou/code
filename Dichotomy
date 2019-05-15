@@ -9,3 +9,4 @@ def dichotomy(sorted_list,t):  #must be a sorted list
             low = mid + 1
         else:
             return 'length of sorted string is', len(sorted_list), 'the index of t is ',mid
+  
