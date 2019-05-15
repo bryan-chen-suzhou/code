@@ -1,0 +1,11 @@
+def dichotomy(sorted_list,t):  #must be a sorted list
+    high = len(sorted_list) - 1  
+    low = 0  
+    while high >= low:
+        mid = (high + low) // 2
+        if sorted_list[mid] > t:
+            high = mid - 1
+        elif sorted_list[mid] < t:
+            low = mid + 1
+        else:
+            return 'length of sorted string is', len(sorted_list), 'the index of t is ',mid
